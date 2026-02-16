@@ -18,9 +18,6 @@ use SprykerShop\Yves\PaymentPage\Form\PaymentForeignSubForm;
 use SprykerShop\Yves\PaymentPage\Plugin\StepEngine\AbstractPaymentForeignSubFormPlugin;
 use SprykerShop\Yves\PaymentPage\Plugin\StepEngine\PaymentForeignSubFormPlugin;
 
-/**
- * @method \SprykerShop\Yves\PaymentPage\PaymentPageConfig getConfig()
- */
 class PaymentPageFactory extends AbstractFactory
 {
     /**
