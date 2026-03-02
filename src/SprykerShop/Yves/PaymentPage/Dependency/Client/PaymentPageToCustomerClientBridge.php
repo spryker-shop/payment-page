@@ -24,17 +24,11 @@ class PaymentPageToCustomerClientBridge implements PaymentPageToCustomerClientIn
         $this->customerClient = $customerClient;
     }
 
-    /**
-     * @return void
-     */
     public function markCustomerAsDirty(): void
     {
         $this->customerClient->markCustomerAsDirty();
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\CustomerTransfer|null
-     */
     public function getCustomer(): ?CustomerTransfer
     {
         return $this->customerClient->getCustomer();

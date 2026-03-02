@@ -15,9 +15,6 @@ use Spryker\Yves\Kernel\View\View;
  */
 class PaymentSuccessController extends AbstractController
 {
-    /**
-     * @return \Spryker\Yves\Kernel\View\View
-     */
     public function indexAction(): View
     {
         $quoteTransfer = $this->getFactory()->getCartClient()->getQuote();

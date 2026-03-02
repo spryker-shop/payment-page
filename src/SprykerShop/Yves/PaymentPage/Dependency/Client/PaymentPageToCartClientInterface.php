@@ -11,13 +11,7 @@ use Generated\Shared\Transfer\QuoteTransfer;
 
 interface PaymentPageToCartClientInterface
 {
-    /**
-     * @return void
-     */
     public function clearQuote(): void;
 
-    /**
-     * @return \Generated\Shared\Transfer\QuoteTransfer
-     */
     public function getQuote(): QuoteTransfer;
 }

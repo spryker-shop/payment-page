@@ -31,9 +31,6 @@ class PaymentForeignSubFormPlugin extends AbstractPaymentForeignSubFormPlugin
             ->setPaymentMethodTransfer($this->paymentMethodTransfer);
     }
 
-    /**
-     * @return \Spryker\Yves\StepEngine\Dependency\Form\StepEngineFormDataProviderInterface
-     */
     public function createSubFormDataProvider(): StepEngineFormDataProviderInterface
     {
         return $this->getFactory()->createPaymentForeignFormDataProvider();

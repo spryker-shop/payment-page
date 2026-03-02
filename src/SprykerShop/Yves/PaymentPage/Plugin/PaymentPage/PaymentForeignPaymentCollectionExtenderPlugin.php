@@ -18,12 +18,6 @@ use SprykerShop\Yves\CheckoutPageExtension\Dependency\Plugin\PaymentCollectionEx
  */
 class PaymentForeignPaymentCollectionExtenderPlugin extends AbstractPlugin implements PaymentCollectionExtenderPluginInterface
 {
-    /**
-     * @param \Spryker\Yves\StepEngine\Dependency\Plugin\Form\SubFormPluginCollection $paymentSubFormPluginCollection
-     * @param \Generated\Shared\Transfer\PaymentMethodsTransfer $paymentMethodsTransfer
-     *
-     * @return \Spryker\Yves\StepEngine\Dependency\Plugin\Form\SubFormPluginCollection
-     */
     public function extendCollection(
         SubFormPluginCollection $paymentSubFormPluginCollection,
         PaymentMethodsTransfer $paymentMethodsTransfer
@@ -42,12 +36,6 @@ class PaymentForeignPaymentCollectionExtenderPlugin extends AbstractPlugin imple
         return $paymentSubFormPluginCollection;
     }
 
-    /**
-     * @param \Spryker\Yves\StepEngine\Dependency\Plugin\Form\SubFormPluginCollection $paymentSubFormPluginCollection
-     * @param \Generated\Shared\Transfer\PaymentMethodTransfer $paymentMethodTransfer
-     *
-     * @return \Spryker\Yves\StepEngine\Dependency\Plugin\Form\SubFormPluginCollection
-     */
     protected function addPaymentForeignMethod(
         SubFormPluginCollection $paymentSubFormPluginCollection,
         PaymentMethodTransfer $paymentMethodTransfer

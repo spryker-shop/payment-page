@@ -21,9 +21,6 @@ class PaymentCancelController extends AbstractController
      */
     protected const PARAM_ORDER_REFERENCE = 'orderReference';
 
-    /**
-     * @return \Spryker\Yves\Kernel\View\View
-     */
     public function indexAction(): View
     {
         $this->cancelOrder();

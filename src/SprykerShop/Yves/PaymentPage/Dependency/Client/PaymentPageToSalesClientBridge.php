@@ -26,11 +26,6 @@ class PaymentPageToSalesClientBridge implements PaymentPageToSalesClientInterfac
         $this->salesClient = $salesClient;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\OrderCancelRequestTransfer $orderCancelRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\OrderCancelResponseTransfer
-     */
     public function cancelOrder(OrderCancelRequestTransfer $orderCancelRequestTransfer): OrderCancelResponseTransfer
     {
         if (!method_exists($this->salesClient, 'cancelOrder')) {

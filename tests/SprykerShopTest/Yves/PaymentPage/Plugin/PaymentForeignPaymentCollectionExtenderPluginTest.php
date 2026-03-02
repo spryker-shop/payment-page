@@ -18,9 +18,6 @@ use SprykerShop\Yves\PaymentPage\Plugin\StepEngine\PaymentForeignSubFormPlugin;
 
 class PaymentForeignPaymentCollectionExtenderPluginTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testExtendCollectionReturnsCorrectSubFormPluginCollectionWhenRequestIsCorrect(): void
     {
         // Arrange
@@ -43,9 +40,6 @@ class PaymentForeignPaymentCollectionExtenderPluginTest extends Unit
         $this->assertCount(1, $responseSubFormPluginCollection);
     }
 
-    /**
-     * @return void
-     */
     public function testExtendCollectionReturnsEmptyCorrectSubFormPluginCollectionWhenRequestIsNotCorrect(): void
     {
         // Arrange

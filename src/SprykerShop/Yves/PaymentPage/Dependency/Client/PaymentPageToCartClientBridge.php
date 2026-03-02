@@ -24,17 +24,11 @@ class PaymentPageToCartClientBridge implements PaymentPageToCartClientInterface
         $this->cartClient = $cartClient;
     }
 
-    /**
-     * @return void
-     */
     public function clearQuote(): void
     {
         $this->cartClient->clearQuote();
     }
 
-    /**
-     * @return \Generated\Shared\Transfer\QuoteTransfer
-     */
     public function getQuote(): QuoteTransfer
     {
         return $this->cartClient->getQuote();

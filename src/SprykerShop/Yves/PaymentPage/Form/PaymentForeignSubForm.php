@@ -62,25 +62,16 @@ class PaymentForeignSubForm extends AbstractSubFormType implements StandaloneSub
         ];
     }
 
-    /**
-     * @return string
-     */
     public function getLabelName(): string
     {
         return (string)$this->getPaymentMethodTransfer()->getLabelName();
     }
 
-    /**
-     * @return string
-     */
     public function getGroupName(): string
     {
         return (string)$this->getPaymentMethodTransfer()->getGroupName();
     }
 
-    /**
-     * @return string
-     */
     public function getPropertyPath(): string
     {
         return sprintf(
@@ -90,19 +81,11 @@ class PaymentForeignSubForm extends AbstractSubFormType implements StandaloneSub
         );
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return (string)$this->getPaymentMethodTransfer()->getPaymentMethodKey();
     }
 
-    /**
-     * @param \Symfony\Component\OptionsResolver\OptionsResolver $resolver
-     *
-     * @return void
-     */
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
@@ -145,9 +128,6 @@ class PaymentForeignSubForm extends AbstractSubFormType implements StandaloneSub
         return $this->paymentMethodTransfer;
     }
 
-    /**
-     * @return string
-     */
     protected function getTemplatePath(): string
     {
         return '';
